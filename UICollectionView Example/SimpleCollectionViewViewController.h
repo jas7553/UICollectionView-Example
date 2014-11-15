@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SimpleCollectionViewViewController.h
 //  UICollectionView Example
 //
 //  Created by Jason A Smith on 11/15/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SimpleCollectionViewViewController : UIViewController
 
 
 @end

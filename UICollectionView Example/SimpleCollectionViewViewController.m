@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  SimpleCollectionViewViewController.m
 //  UICollectionView Example
 //
 //  Created by Jason A Smith on 11/15/14.
 //  Copyright (c) 2014 Jason A. Smith. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SimpleCollectionViewViewController.h"
 
-@interface ViewController ()
+@interface SimpleCollectionViewViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SimpleCollectionViewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

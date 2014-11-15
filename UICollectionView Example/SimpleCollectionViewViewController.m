@@ -20,12 +20,8 @@
 
 @implementation SimpleCollectionViewViewController
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.cellCount = 3;
-    }
-    return self;
+- (void)viewWillAppear:(BOOL)animated {
+    self.cellCount = 100;
 }
 
 #pragma mark - UICollectionViewDataSource

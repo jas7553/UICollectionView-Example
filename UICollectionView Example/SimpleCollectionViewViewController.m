@@ -24,4 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - IBActions
+
+- (IBAction)addCell:(id)sender {
+}
+
 @end

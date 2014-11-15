@@ -11,8 +11,7 @@
 @interface SimpleCollectionViewViewController ()
 
 /*
- * Number of cells to begin with.
- * This will be incremented and decremented when cells are added and deleted.
+ * The number of cells in the UICollectionView
  */
 @property NSInteger cellCount;
 
@@ -21,6 +20,7 @@
 @implementation SimpleCollectionViewViewController
 
 - (void)viewWillAppear:(BOOL)animated {
+    // Initialize the model
     self.cellCount = 100;
 }
 
@@ -50,16 +50,20 @@
 #pragma mark - Private methods
 
 - (void)removeItemAtIndex:(NSIndexPath *)indexPath {
+    // Update the model
     self.cellCount -= 1;
     
+    // Update the view
     [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
 }
 
 #pragma mark - IBActions
 
 - (IBAction)addCell:(id)sender {
+    // Update the model
     self.cellCount += 1;
     
+    // Update the view
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:self.cellCount - 1 inSection:0];
     [self.collectionView insertItemsAtIndexPaths:@[indexPath]];
 }

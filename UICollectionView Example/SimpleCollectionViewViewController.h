@@ -10,6 +10,4 @@
 
 @interface SimpleCollectionViewViewController : UICollectionViewController<UICollectionViewDataSource>
 
-
 @end
-
